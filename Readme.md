@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Дарья Мей](https://up.htmlacademy.ru/adaptive/26/user/2012389).
-* Наставник: [Юлия Антонова](https://up.htmlacademy.ru/adaptive/26/user/39082)/.
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/talequale).
 
 ---
 
