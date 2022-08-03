@@ -9,8 +9,8 @@
 <body>
   <div class="page-container">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="../source/img/logotype-phone.svg" width="185" height="96"
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logotype-phone.svg" width="185" height="96"
           alt="Логотип сайта Седона">
       </a>
 
@@ -19,19 +19,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">
-                Главная
-              </a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item ">
-              <a href="gallery.html">
-                Фото и видео
-              </a>
+              <a href="gallery.html">Фото и видео</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>
-                Форма отзыва
-              </a>
+              <a>Форма отзыва</a>
             </li>
             <li class="site-list__item">
               <a href="#">
@@ -48,8 +42,8 @@
 
       <section class="form-intro">
         <h2 class="form-intro__title">Оставьте свой отзыв</h2>
-        <p class="form-intro__description">Помогите нашим отелям стать лучше!<br> оставьте отзыв о них, а также о<br>
-          посещенных вами <br> достопримечательностях
+        <p class="form-intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях
         </p>
       </section>
 
@@ -58,67 +52,68 @@
 
         <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
 
-          <fieldset class="client-info__full-name">
-            <legend class="client-info__full-name-title">Представьтесь:</legend>
+          <fieldset class="client-info">
+            <legend class="client-info__title">Представьтесь:</legend>
             <div class="client-info__name">
               <label for="name">Имя*:</label>
               <input class="client-info__field" type="text" id="name" value="Пётр">
             </div>
-            <div class="client-info__lastname">
+            <div class="client-info__name">
               <label for="lastname">Фамилия*:</label>
               <input class="client-info__field" type="text" id="lastname" value="Пустота">
             </div>
-            <div class="client-info__patronymic">
+            <div class="client-info__name">
               <label for="patronymic">Отчество:</label>
               <input class="client-info__field" type="text" id="patronymic" value="Викторович">
             </div>
           </fieldset>
 
-          <fieldset class="client-info__contact">
-            <legend class="client-info__contact-title">Контактная информация:</legend>
-            <div class="client-info__contact-phone">
+          <fieldset class="contact">
+            <legend class="сontact__title">Контактная информация:</legend>
+            <div class="contact__phone">
               <label for="phone">Контактный телефон*:</label>
-              <input class="client-info__field--contact" type="text" id="phone" value="Введите телефон">
+              <input class="contact__field" type="text" id="phone" value="Введите телефон">
             </div>
-            <div class="client-info__contact-email">
+            <div class="contact__email">
               <label for="email">Электронная почта*:</label>
-              <input class="client-info__field--contact" type="text" id="email" value="Введите e-mail">
+              <input class="contact__field" type="text" id="email" value="Введите e-mail">
             </div>
           </fieldset>
 
-          <fieldset class="client-info__impression">
-            <legend class="client-info__impression-title">Ваше общее впечатление:</legend>
+          <fieldset class="impression">
+            <legend class="impression__title">Ваше общее впечатление:</legend>
 
-            <input class="client-info__radio" type="radio" id="positive">
+            <input class="impression__radio" type="radio" name="radio" id="positive">
             <label for="positive">Скорее положительное</label>
 
-            <input class="client-info__radio" type="radio" id="negative">
+            <input class="impression__radio" type="radio" name="radio" id="negative">
             <label for="negative">Скорее отрицательное</label>
 
-            <input class="client-info__radio" type="radio" id="neutral">
+            <input class="impression__radio" type="radio" name="radio" id="neutral">
             <label for="neutral">Затрудняюсь ответить</label>
           </fieldset>
 
-          <fieldset class="client-info__sights">
-            <legend class="client-info__sights-title">Посещенные достопримечательности:</legend>
+          <fieldset class="sights">
+            <legend class="sights__title">Посещенные достопримечательности:</legend>
 
-            <input class="client-info__checkbox" type="checkbox" id="devil-bridge" value="" checked>
+            <input class="sights__checkbox" type="checkbox" id="devil-bridge" value="" checked>
             <label for="devil-bridge">Мост Дьявола</label>
 
-            <input class="client-info__checkbox" type="checkbox" id="bell-mountain" value="" checked>
+            <input class="sights__checkbox" type="checkbox" id="bell-mountain" value="" checked>
             <label for="bell-mountain">Гора-Колокол</label>
 
-            <input class="client-info__checkbox" type="checkbox" id="slide-park" value="" checked>
+            <input class="sights__checkbox" type="checkbox" id="slide-park" value="" checked>
             <label for="slide-park">Слайд-парк</label>
 
-            <input class="client-info__checkbox" type="checkbox" id="red-cliff" value="">
+            <input class="sights__checkbox" type="checkbox" id="red-cliff" value="">
             <label for="red-cliff">Красные скалы</label>
           </fieldset>
 
-          <fieldset class="client-info__feedback">
-            <legend class="client-info__feedback-title">Опишите свои эмоции:</legend>
-            <textarea class="client-info__textarea" placeholder="Опишите подробно все свои восторги "></textarea>
+          <fieldset class="feedback">
+            <legend class="feedback__title">Опишите свои эмоции:</legend>
+            <textarea class="feedback__textarea" placeholder="Опишите подробно все свои восторги "></textarea>
           </fieldset>
+
           <button class="feedback-form__button-submit" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
           <p class="feedback-form__legend">
             <small>
@@ -131,7 +126,7 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__hashtag hashtag">
-          <p class="site-hashtag">#visitSEDONA</p>
+          <p class="hashtag__text">#visitSEDONA</p>
         </div>
       </div>
       <div class="main-footer__social social">
@@ -155,16 +150,16 @@
     </footer>
   </div>
 
-  <div class="modal-error__container modal-error__container--close">
-    <div class="modal-error">
+  <div class="modal-error">
+    <div class="modal-error__container modal-error__container--close">
       <b class="modal-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
       <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="modal-error__button-close" type="button">ОК</button>
     </div>
   </div>
 
-  <div class="modal-success__container modal-success__container--close">
-    <div class="modal-success">
+  <div class="modal-success">
+    <div class="modal-success__container modal-success__container--close">
       <b class="modal-success__title">Ваш отзыв отправлен!</b>
       <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
         опубликуем его на сайте.</p>
