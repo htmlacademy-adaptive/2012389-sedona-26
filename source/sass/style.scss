@@ -1,3 +1,19 @@
-body {
-  background: yellow;
-}
+@import "./blocks/page-container.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/index-intro.scss";
+@import "./blocks/advantages.scss";
+
+
+//   .visually-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   padding: 0;
+//   border: 0;
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }
