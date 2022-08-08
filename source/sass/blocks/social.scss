@@ -1,5 +1,12 @@
-.social {
+.social__list {
+  list-style: none;
+
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 6px;
+
+  margin: 0;
+  padding-left: 0;
+  padding-top: 33px;
+  padding-bottom: 40px;
 }

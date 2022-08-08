@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin: 0;
+  padding: 38px 30px 32px 29px;
 }
 
 .travel__title {
@@ -14,6 +17,9 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  margin: 0;
+  padding-bottom: 26px;
 }
 
 .travel__description {
@@ -22,6 +28,9 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+
+  margin: 0;
+  padding-bottom: 26px;
 }
 
 .travel__link {

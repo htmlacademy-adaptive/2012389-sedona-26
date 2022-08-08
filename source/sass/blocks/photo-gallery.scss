@@ -1,0 +1,59 @@
+.photo-gallery {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+
+  margin: 0;
+}
+
+.photo-gallery__list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+}
+
+.photo-gallery__item {
+  padding: 24px 20px 25px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.photo-gallery__link {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.photo-gallery__image-title {
+  margin: 0;
+  padding-bottom: 11px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.photo-gallery__image-author {
+  margin: 0;
+  padding-bottom: 14px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.photo-gallery__button-thumbs-up {
+  padding-left: 70px;
+
+  background-color: #ffffff;
+  color: black;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}

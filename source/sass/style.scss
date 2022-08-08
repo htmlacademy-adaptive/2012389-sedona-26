@@ -1,5 +1,6 @@
 @import "./blocks/page-container.scss";
 @import "./blocks/main-header.scss";
+@import "./blocks/logo.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/main-container.scss";
@@ -11,15 +12,27 @@
 @import "./blocks/main-footer.scss";
 @import "./blocks/hashtag.scss";
 @import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/gallery-intro.scss";
+@import "./blocks/photo-gallery.scss";
+@import "./blocks/video-gallery.scss";
+@import "./blocks/form-intro.scss";
+@import "./blocks/feedback-content.scss";
+@import "./blocks/feedback-form.scss";
+@import "./blocks/client-info.scss";
+@import "./blocks/contact.scss";
+@import "./blocks/impression.scss";
+@import "./blocks/sights.scss";
+@import "./blocks/feedback.scss";
 
 
-//   .visually-hidden {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   padding: 0;
-//   border: 0;
-//   clip: rect(0 0 0 0);
-//   overflow: hidden;
-// }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
