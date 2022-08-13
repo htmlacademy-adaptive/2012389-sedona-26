@@ -1,0 +1,54 @@
+
+.modal-error {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+
+  width: 320px;
+  min-height: 280px;
+
+  margin: 0 auto;
+}
+
+.modal-error__container {
+  padding: 45px 42px 0 41px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-error__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 28px;
+}
+
+.modal-error__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.modal-error__button-close {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: #81b3d2;
+  border: 0;
+
+  padding: 18px 14px;
+  box-sizing: border-box;
+}

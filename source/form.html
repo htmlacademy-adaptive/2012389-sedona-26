@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона. Форма</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="page-container">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
+      <a class="main-header__logo logo" href="index.html">
         <img class="main-header__logo-image" src="img/logotype-phone.svg" width="185" height="96"
           alt="Логотип сайта Седона">
       </a>
@@ -80,42 +81,57 @@
           <fieldset class="impression">
             <legend class="impression__title">Ваше общее впечатление:</legend>
 
+            <div class="impression__wrap">
             <input class="impression__radio" type="radio" name="radio" id="positive">
             <label for="positive">Скорее положительное</label>
+            </div>
 
+            <div class="impression__wrap">
             <input class="impression__radio" type="radio" name="radio" id="negative">
             <label for="negative">Скорее отрицательное</label>
+          </div>
 
+            <div class="impression__wrap">
             <input class="impression__radio" type="radio" name="radio" id="neutral">
             <label for="neutral">Затрудняюсь ответить</label>
+          </div>
           </fieldset>
 
           <fieldset class="sights">
             <legend class="sights__title">Посещенные достопримечательности:</legend>
 
+            <div class="sights__wrap">
             <input class="sights__checkbox" type="checkbox" id="devil-bridge" value="" checked>
             <label for="devil-bridge">Мост Дьявола</label>
+            </div>
 
+            <div class="sights__wrap">
             <input class="sights__checkbox" type="checkbox" id="bell-mountain" value="" checked>
             <label for="bell-mountain">Гора-Колокол</label>
+            </div>
 
+            <div class="sights__wrap">
             <input class="sights__checkbox" type="checkbox" id="slide-park" value="" checked>
             <label for="slide-park">Слайд-парк</label>
+            </div>
 
+            <div class="sights__wrap">
             <input class="sights__checkbox" type="checkbox" id="red-cliff" value="">
             <label for="red-cliff">Красные скалы</label>
+            </div>
           </fieldset>
 
           <fieldset class="feedback">
             <legend class="feedback__title">Опишите свои эмоции:</legend>
             <textarea class="feedback__textarea" placeholder="Опишите подробно все свои восторги "></textarea>
-          </fieldset>
+            </fieldset>
 
           <button class="feedback-form__button-submit" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
           <p class="feedback-form__legend">
-            <small>* — обязательные поля</small>
+          <small>* — обязательные поля</small>
           </p>
-        </form>
+
+          </form>
       </section>
     </main>
     <footer class="main-footer">

@@ -1,0 +1,36 @@
+.recommend {
+  background-color: #ffffff;
+  color: #000000;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0;
+}
+
+.recommend__item {
+  padding: 23px 20px 22px 18px;
+}
+
+.recommend__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding-bottom: 16px;
+  padding-left: 47px;
+}
+
+.recommend__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding-left: 47px;
+}
