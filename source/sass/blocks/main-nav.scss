@@ -1,5 +1,5 @@
 .main-nav {
-  background: #81b3d2;
+  background-color: #81b3d2;
   width: 100%;
 
   font-weight: 700;
@@ -10,9 +10,15 @@
   color: #ffffff;
 }
 
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 0;
+
+@media (min-width: $tablet-width) or (min-width: $desktop-width) {
+  .main-nav {
+    background-color: #ffffff;
+    box-shadow: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
+
