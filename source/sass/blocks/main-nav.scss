@@ -11,7 +11,7 @@
 }
 
 
-@media (min-width: $tablet-width) or (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .main-nav {
     background-color: #ffffff;
     box-shadow: none;
@@ -22,3 +22,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-nav {
+    background-color: #ffffff;
+    box-shadow: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
