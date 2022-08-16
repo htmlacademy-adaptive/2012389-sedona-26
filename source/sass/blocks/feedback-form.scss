@@ -64,4 +64,17 @@
   text-align: end;
 
   color: rgba(51, 51, 51, 0.6);
+
+
+  @media (min-width: $tablet-width) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 36px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px;
+  }
 }
