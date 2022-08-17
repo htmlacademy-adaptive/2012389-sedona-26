@@ -96,6 +96,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 400px;
+  }
 }
 
 .advantages__item--accent {
@@ -118,7 +126,7 @@
     padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 758px;
+    flex-basis: 768px;
   }
 
   @media (min-width: $desktop-width) {
