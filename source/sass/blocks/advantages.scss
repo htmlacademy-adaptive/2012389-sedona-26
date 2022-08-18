@@ -141,7 +141,7 @@
 .advantages__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
