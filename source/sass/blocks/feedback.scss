@@ -3,6 +3,30 @@
   border: none;
   margin: 0 auto;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-top: 48px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 48px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .feedback__title {
@@ -32,4 +56,14 @@
   min-height: 150px;
   padding: 16px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 648px;
+    min-height: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 768px;
+    min-height: 160px;
+  }
 }

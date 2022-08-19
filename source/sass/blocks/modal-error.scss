@@ -1,20 +1,48 @@
-
 .modal-error {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-
   width: 320px;
   min-height: 280px;
 
   margin: 0 auto;
+
+  // position: fixed;
+  // top: 100px;
+  // left: 100px;
+  // background: rgba(242, 242, 242, 0.8);
+
+  @media (min-width: $tablet-width) {
+    width: 420px;
+    min-height: 347px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 420px;
+    min-height: 347px;
+    margin: 0 auto;
+  }
 }
 
 .modal-error__container {
-  padding: 45px 42px 0 41px;
+  padding: 45px 42px 35px 41px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px rgb(0 0 0 / 15%);
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 42px 49px 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 42px 49px 41px;
+  }
 }
+
+// .modal-error__container--close {
+//   display: none;
+// }
 
 .modal-error__title {
   font-weight: 700;
@@ -24,6 +52,18 @@
   text-transform: uppercase;
 
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal-error__description {
@@ -32,6 +72,7 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  color: #333333;
 
   margin: 0;
   margin-bottom: 28px;
@@ -51,4 +92,16 @@
 
   padding: 18px 14px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
 }

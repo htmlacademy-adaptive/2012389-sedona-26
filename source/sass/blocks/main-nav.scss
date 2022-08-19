@@ -1,6 +1,7 @@
 .main-nav {
-  background: #81b3d2;
+  background-color: #81b3d2;
   width: 100%;
+  margin: 0 auto;
 
   font-weight: 700;
   font-size: 18px;
@@ -10,9 +11,33 @@
   color: #ffffff;
 }
 
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 0;
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    background-color: #ffffff;
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    background-color: #ffffff;
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

@@ -3,10 +3,30 @@
 
   margin: 0 auto;
   width: 100%;
-  max-width: 320px;
+
+  display: flex;
+  align-items: center;
 }
 
 .map__sedona {
-  max-width: 320px;
   min-height: 350px;
+}
+
+.map .map__sedona {
+  border: none;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: none;
+  }
 }

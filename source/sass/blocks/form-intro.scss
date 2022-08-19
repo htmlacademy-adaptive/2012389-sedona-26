@@ -1,8 +1,53 @@
 .form-intro {
-  padding: 194px 20px 28px 20px;
   margin: 0 auto;
   width: 100%;
   max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.form-intro__image-wrapper {
+  background-color: #81b3d2;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 768px;
+    min-height: 301px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 301px;
+    margin: 0 auto;
+  }
+}
+
+.form-intro__image {
+  z-index: 1;
+}
+
+.form-intro__text {
+  padding: 36px 20px 28px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 166px 51px 167px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 384px 51px 382px;
+  }
 }
 
 .form-intro__title {
@@ -12,6 +57,7 @@
   text-align: center;
   text-transform: uppercase;
 
+  margin-top: 0;
   margin-bottom: 24px;
 }
 
@@ -21,4 +67,5 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
