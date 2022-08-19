@@ -1,16 +1,18 @@
 .gallery-intro {
-  padding: 0 20px 20px 20px;
   margin: 0 auto;
   width: 100%;
   max-width: 320px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -23,14 +25,14 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     max-width: 768px;
-    min-height: 301px;
+    min-height: 290px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     max-width: 1200px;
-    min-height: 301px;
+    min-height: 290px;
     margin: 0 auto;
   }
 }
@@ -39,12 +41,31 @@
   z-index: 1;
 }
 
+.gallery-intro__text-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-left: 370px;
+    padding-right: 370px;
+    padding-bottom: 65px;
+  }
+}
+
 .gallery-intro__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
 }
 
 .gallery-intro__description {
@@ -53,4 +74,6 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
 }
