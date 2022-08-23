@@ -53,9 +53,28 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  white-space: nowrap;
 
-  background-color: #81b3d2;
+  background: #81b3d2;
 
   display: inline-block;
   padding: 16px 49px;
+
+  &:hover,
+  &:focus {
+    background: #669ec0;
+  }
+
+  &:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 121px 18px;
+  }
 }

@@ -161,15 +161,21 @@
 }
 
 .photo-gallery__button-thumbs-up {
-  padding-left: 70px;
+  padding-left: 34px;
 
   background-color: #ffffff;
   color: #000000;
+  border: none;
 
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
+
+  background-image: url("../img/gallery/like-icon.svg");
+  background-repeat: no-repeat;
+
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -177,6 +183,9 @@
     bottom: 27px;
     right: 20px;
     background: #f2f2f2;
+
+    background-image: url("../img/gallery/like-icon.svg");
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
@@ -186,5 +195,8 @@
 
     background-color: transparent;
     color: #ffffff;
+
+    background-image: url("../img/gallery/like-icon-white.svg");
+    background-repeat: no-repeat;
   }
 }

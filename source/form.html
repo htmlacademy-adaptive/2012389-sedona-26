@@ -63,15 +63,15 @@
             <legend class="client-info__title">Представьтесь:</legend>
             <div class="client-info__name">
               <label for="name">Имя*:</label>
-              <input class="client-info__field" type="text" id="name" value="Пётр">
+              <input class="client-info__field" type="text" id="name" value="Пётр" placeholder="Имя">
             </div>
             <div class="client-info__name">
               <label for="lastname">Фамилия*:</label>
-              <input class="client-info__field" type="text" id="lastname" value="Пустота">
+              <input class="client-info__field" type="text" id="lastname" value="Пустота" placeholder="Фамилия">
             </div>
             <div class="client-info__name">
               <label for="patronymic">Отчество:</label>
-              <input class="client-info__field" type="text" id="patronymic" value="Викторович">
+              <input class="client-info__field" type="text" id="patronymic" value="Викторович" placeholder="Отчество">
             </div>
           </fieldset>
 
@@ -80,10 +80,12 @@
             <div class="contact__phone">
               <label for="phone">Контактный телефон*:</label>
               <input class="contact__field" type="text" id="phone" value="Введите телефон">
+              <span class="contact__phone-icon"></span>
             </div>
             <div class="contact__email">
               <label for="email">Электронная почта*:</label>
               <input class="contact__field" type="text" id="email" value="Введите e-mail">
+              <span class="contact__email-icon"></span>
             </div>
           </fieldset>
 
@@ -91,17 +93,20 @@
             <legend class="impression__title">Ваше общее впечатление:</legend>
 
             <div class="impression__wrap">
-            <input class="impression__radio" type="radio" name="radio" id="positive">
+            <input class="impression__radio visually-hidden" type="radio" name="radio" id="positive" checked>
+            <span class="impression__radio-mark"></span>
             <label for="positive">Скорее положительное</label>
             </div>
 
             <div class="impression__wrap">
-            <input class="impression__radio" type="radio" name="radio" id="negative">
+            <input class="impression__radio visually-hidden" type="radio" name="radio" id="negative">
+            <span class="impression__radio-mark"></span>
             <label for="negative">Скорее отрицательное</label>
           </div>
 
             <div class="impression__wrap">
-            <input class="impression__radio" type="radio" name="radio" id="neutral">
+            <input class="impression__radio visually-hidden" type="radio" name="radio" id="neutral">
+            <span class="impression__radio-mark"></span>
             <label for="neutral">Затрудняюсь ответить</label>
           </div>
           </fieldset>
