@@ -5,4 +5,13 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

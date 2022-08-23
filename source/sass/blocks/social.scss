@@ -4,9 +4,53 @@
   display: flex;
   flex-direction: row;
   gap: 6px;
+  align-items: center;
 
   margin: 0;
   padding-left: 0;
   padding-top: 33px;
   padding-bottom: 40px;
+}
+
+.social__item {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__link {
+  background: #81b3d2;
+
+  &:hover,
+  &:focus {
+    background: #669ec0;
+  }
+
+  &:active {
+    background: #5496bd;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #ffffff;
+  }
+
+  &:active path {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.social__link.social__link--vkontakte {
+  padding: 17px 12px 17px;
+}
+
+.social__link.social__link--telegram {
+  padding: 16px 14px 14px;
+}
+
+.social__link.social__link--youtube {
+  padding: 17px 14px 17px;
 }
