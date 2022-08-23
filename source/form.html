@@ -80,12 +80,16 @@
             <div class="contact__phone">
               <label for="phone">Контактный телефон*:</label>
               <input class="contact__field" type="text" id="phone" value="Введите телефон">
-              <span class="contact__phone-icon"></span>
+              <span class="contact__phone-icon-wrap">
+                <span class="contact__phone-icon"></span>
+              </span>
             </div>
             <div class="contact__email">
               <label for="email">Электронная почта*:</label>
               <input class="contact__field" type="text" id="email" value="Введите e-mail">
-              <span class="contact__email-icon"></span>
+              <span class="contact__email-icon-wrap">
+                <span class="contact__email-icon"></span>
+              </span>
             </div>
           </fieldset>
 
@@ -93,21 +97,24 @@
             <legend class="impression__title">Ваше общее впечатление:</legend>
 
             <div class="impression__wrap">
-            <input class="impression__radio visually-hidden" type="radio" name="radio" id="positive" checked>
-            <span class="impression__radio-mark"></span>
-            <label for="positive">Скорее положительное</label>
+            <label for="positive">
+              <input class="impression__radio visually-hidden" type="radio" name="radio" id="positive" checked>
+              <span class="impression__radio-mark"></span>
+              Скорее положительное</label>
             </div>
 
             <div class="impression__wrap">
-            <input class="impression__radio visually-hidden" type="radio" name="radio" id="negative">
-            <span class="impression__radio-mark"></span>
-            <label for="negative">Скорее отрицательное</label>
+            <label for="negative">
+              <input class="impression__radio visually-hidden" type="radio" name="radio" id="negative">
+              <span class="impression__radio-mark"></span>
+              Скорее отрицательное</label>
           </div>
 
             <div class="impression__wrap">
-            <input class="impression__radio visually-hidden" type="radio" name="radio" id="neutral">
-            <span class="impression__radio-mark"></span>
-            <label for="neutral">Затрудняюсь ответить</label>
+            <label for="neutral">
+              <input class="impression__radio visually-hidden" type="radio" name="radio" id="neutral">
+              <span class="impression__radio-mark"></span>
+            Затрудняюсь ответить</label>
           </div>
           </fieldset>
 
@@ -115,23 +122,31 @@
             <legend class="sights__title">Посещенные достопримечательности:</legend>
 
             <div class="sights__wrap">
-            <input class="sights__checkbox" type="checkbox" id="devil-bridge" value="" checked>
-            <label for="devil-bridge">Мост Дьявола</label>
+            <label for="devil-bridge">
+              <input class="sights__checkbox visually-hidden" type="checkbox" id="devil-bridge" value="" checked>
+              <span class="sights__checkbox-icon"></span>
+              Мост Дьявола</label>
             </div>
 
             <div class="sights__wrap">
-            <input class="sights__checkbox" type="checkbox" id="bell-mountain" value="" checked>
-            <label for="bell-mountain">Гора-Колокол</label>
+            <label for="bell-mountain">
+              <input class="sights__checkbox visually-hidden" type="checkbox" id="bell-mountain" value="" checked>
+              <span class="sights__checkbox-icon"></span>
+              Гора-Колокол</label>
             </div>
 
             <div class="sights__wrap">
-            <input class="sights__checkbox" type="checkbox" id="slide-park" value="" checked>
-            <label for="slide-park">Слайд-парк</label>
+            <label for="slide-park">
+              <input class="sights__checkbox visually-hidden" type="checkbox" id="slide-park" value="" checked>
+              <span class="sights__checkbox-icon"></span>
+              Слайд-парк</label>
             </div>
 
             <div class="sights__wrap">
-            <input class="sights__checkbox" type="checkbox" id="red-cliff" value="">
-            <label for="red-cliff">Красные скалы</label>
+            <label for="red-cliff">
+              <input class="sights__checkbox visually-hidden" type="checkbox" id="red-cliff" value="">
+              <span class="sights__checkbox-icon"></span>
+              Красные скалы</label>
             </div>
           </fieldset>
 
