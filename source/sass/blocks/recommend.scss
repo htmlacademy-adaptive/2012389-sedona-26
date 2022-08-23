@@ -21,6 +21,7 @@
 }
 
 .recommend__item {
+  position: relative;
   padding: 23px 20px 22px 18px;
 
   @media (min-width: $tablet-width) {
@@ -72,4 +73,40 @@
     text-align: center;
     padding-left: 0;
   }
+}
+
+.recommend__house::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 18px;
+
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  width: 39px;
+  height: 37px;
+}
+
+.recommend__food::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 18px;
+
+  background-image: url("../img/icon-food.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 35px;
+}
+
+.recommend__gift::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 18px;
+
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 38px;
 }
