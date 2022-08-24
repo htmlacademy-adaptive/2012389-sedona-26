@@ -52,6 +52,10 @@
     width: 20%;
     box-shadow: none;
     min-width: auto;
+
+    &:hover {
+      background: transparent;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -105,7 +109,6 @@
     &:hover,
     &:focus {
       color: #81b3d2;
-      background: transparent;
     }
 
     &:active {
@@ -116,6 +119,7 @@
 
   @media (min-width: $desktop-width) {
     color: #000000;
+    background: transparent;
   }
 }
 
