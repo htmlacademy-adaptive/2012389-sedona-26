@@ -15,4 +15,3 @@ navToggle.addEventListener('click', function () {
     logo.classList.remove('logo--none');
   }
 });
-
