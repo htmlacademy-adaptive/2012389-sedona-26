@@ -37,16 +37,15 @@
   min-width: 320px;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
-  // &:hover {
-  //   background: #669ec0;
-  // }
+  &:hover {
+    background: #669ec0;
+  }
 
-  // &:active {
-  //   background: #5496bd;
-  //   color: #ffffff;
-  //   opacity: 0.3;
-  // }
-
+  &:active {
+    background: #5496bd;
+    color: #ffffff;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -89,6 +88,17 @@
   text-decoration: none;
   color: #ffffff;
 
+  &:hover {
+    background: #669ec0;
+  }
+
+  &:active {
+    background: #5496bd;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+
   @media (min-width: $tablet-width) {
     color: #000000;
 
@@ -110,5 +120,9 @@
 }
 
 .site-list__item--active a {
-  color: #766357;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    color: #766357;
+  }
 }
