@@ -1,5 +1,8 @@
 .index-intro__wrapper {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: #81b3d2;
   margin: 0 auto;
 
@@ -18,8 +21,3 @@
   }
 }
 
-.index-intro__text-image {
-  position: absolute;
-  top: 90px;
-  left: 19px;
-}

@@ -16,7 +16,7 @@
           alt="Логотип сайта Седона">
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -80,15 +80,19 @@
             <div class="contact__phone">
               <label for="phone">Контактный телефон*:</label>
               <input class="contact__field" type="text" id="phone" value="Введите телефон">
-              <span class="contact__phone-icon-wrap">
-                <span class="contact__phone-icon"></span>
+              <span class="contact__icon-wrap">
+                <svg class="contact__icon contact__icon--phone" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z" fill="#010101"/>
+                  </svg>
               </span>
             </div>
             <div class="contact__email">
               <label for="email">Электронная почта*:</label>
               <input class="contact__field" type="text" id="email" value="Введите e-mail">
-              <span class="contact__email-icon-wrap">
-                <span class="contact__email-icon"></span>
+              <span class="contact__icon-wrap">
+                <svg class="contact__icon contact__icon--email" aria-hidden="true" focusable="false" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black"/>
+                  </svg>
               </span>
             </div>
           </fieldset>
@@ -100,21 +104,24 @@
             <label for="positive">
               <input class="impression__radio visually-hidden" type="radio" name="radio" id="positive" checked>
               <span class="impression__radio-mark"></span>
-              Скорее положительное</label>
+              <span  class="impression__text">Скорее положительное</span>
+            </label>
             </div>
 
             <div class="impression__wrap">
             <label for="negative">
               <input class="impression__radio visually-hidden" type="radio" name="radio" id="negative">
               <span class="impression__radio-mark"></span>
-              Скорее отрицательное</label>
+              <span  class="impression__text">Скорее отрицательное</span>
+            </label>
           </div>
 
             <div class="impression__wrap">
             <label for="neutral">
               <input class="impression__radio visually-hidden" type="radio" name="radio" id="neutral">
               <span class="impression__radio-mark"></span>
-            Затрудняюсь ответить</label>
+              <span  class="impression__text">Затрудняюсь ответить</span>
+              </label>
           </div>
           </fieldset>
 
@@ -125,28 +132,32 @@
             <label for="devil-bridge">
               <input class="sights__checkbox visually-hidden" type="checkbox" id="devil-bridge" value="" checked>
               <span class="sights__checkbox-icon"></span>
-              Мост Дьявола</label>
+              <span  class="sights__text">Мост Дьявола</span>
+            </label>
             </div>
 
             <div class="sights__wrap">
             <label for="bell-mountain">
               <input class="sights__checkbox visually-hidden" type="checkbox" id="bell-mountain" value="" checked>
               <span class="sights__checkbox-icon"></span>
-              Гора-Колокол</label>
+              <span  class="sights__text">Гора-Колокол</span>
+            </label>
             </div>
 
             <div class="sights__wrap">
             <label for="slide-park">
               <input class="sights__checkbox visually-hidden" type="checkbox" id="slide-park" value="" checked>
               <span class="sights__checkbox-icon"></span>
-              Слайд-парк</label>
+              <span  class="sights__text">Слайд-парк</span>
+            </label>
             </div>
 
             <div class="sights__wrap">
             <label for="red-cliff">
               <input class="sights__checkbox visually-hidden" type="checkbox" id="red-cliff" value="">
               <span class="sights__checkbox-icon"></span>
-              Красные скалы</label>
+              <span  class="sights__text">Красные скалы</span>
+            </label>
             </div>
           </fieldset>
 
@@ -226,4 +237,5 @@
 
 </body>
 
+<script src="js/script.js"></script>
 </html>

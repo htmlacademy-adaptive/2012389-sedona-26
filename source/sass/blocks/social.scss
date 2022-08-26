@@ -22,15 +22,15 @@
 }
 
 .social__link {
-  background: #81b3d2;
+  background-color: #81b3d2;
 
   &:hover,
   &:focus {
-    background: #669ec0;
+    background-color: #669ec0;
   }
 
   &:active {
-    background: #5496bd;
+    background-color: #5496bd;
   }
 
   &:hover path,
