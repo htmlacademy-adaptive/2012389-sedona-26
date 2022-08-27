@@ -109,11 +109,13 @@
     &:hover,
     &:focus {
       color: #81b3d2;
+      background-color: transparent;
     }
 
     &:active {
       color: #000000;
       opacity: 0.3;
+      background-color: transparent;
     }
   }
 
@@ -128,5 +130,11 @@
 
   @media (min-width: $tablet-width) {
     color: #766357;
+
+    &:hover,
+    &:focus {
+      color: #766357;
+      background-color: transparent;
+    }
   }
 }
