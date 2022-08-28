@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__text {
@@ -10,4 +11,29 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-right: 15px;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.copyright__link {
+  fill: #000000;
+
+  &:hover path,
+  &:focus path {
+    fill: #81b3d2;
+  }
+
+  &:active path {
+    fill: #b3b3b3;
+  }
 }

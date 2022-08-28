@@ -83,12 +83,26 @@
   white-space: nowrap;
 
   color: #ffffff;
-  background: #81b3d2;
+  background-color: #81b3d2;
   border: 0;
 
 
   padding: 18px 62px 14px 60px;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 
   @media (min-width: $tablet-width) {
     font-weight: 700;

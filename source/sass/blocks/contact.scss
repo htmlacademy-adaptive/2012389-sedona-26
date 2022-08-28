@@ -31,6 +31,7 @@
   align-items: flex-start;
 
   margin-bottom: 16px;
+  position: relative;
 }
 
 .contact__phone label {
@@ -48,10 +49,29 @@
   align-items: flex-start;
 
   margin-bottom: 16px;
+  position: relative;
 }
 
 .contact__email label {
   margin-left: 16px;
+}
+
+.contact__icon-wrap {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+}
+
+.contact__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
 }
 
 .contact__field {
@@ -64,8 +84,19 @@
   color: rgba(0, 0, 0, 0.3);
 
   display: block;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   border: none;
 
   padding: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: #e5e5e5;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
 }

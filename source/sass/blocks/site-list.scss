@@ -4,10 +4,8 @@
   align-items: center;
   padding-left: 0;
   margin: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .site-list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -16,10 +14,8 @@
     margin: 0;
     height: auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .site-list {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -37,55 +33,108 @@
 
   padding-top: 17px;
   padding-bottom: 18px;
-}
 
-@media (min-width: $tablet-width) {
-  .site-list__item {
+  min-width: 320px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    width: 20%;
+    box-shadow: none;
+    min-width: auto;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     border-bottom: none;
     width: 20%;
     box-shadow: none;
   }
+}
 
-  .site-list__item:nth-of-type(2) {
+
+.site-list__item:nth-of-type(2) {
+  @media (min-width: $tablet-width) {
     margin-right: 20%;
+    min-width: auto;
   }
 
-  .site-list__item:nth-of-type(4n+2) {
+  @media (min-width: $desktop-width) {
     margin-right: 20%;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .site-list__item {
-    border-bottom: none;
-    width: 20%;
-    box-shadow: none;
-  }
-
-  .site-list__item:nth-of-type(2) {
+.site-list__item:nth-of-type(4n+2) {
+  @media (min-width: $tablet-width) {
     margin-right: 20%;
+    min-width: auto;
   }
 
-  .site-list__item:nth-of-type(4n+2) {
+  @media (min-width: $desktop-width) {
     margin-right: 20%;
   }
 }
-
 
 .site-list__item a {
   text-decoration: none;
   color: #ffffff;
-}
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #ffffff;
+    opacity: 0.3;
+  }
 
 
-@media (min-width: $tablet-width) {
-  .site-list__item a {
+  @media (min-width: $tablet-width) {
     color: #000000;
+
+    &:hover,
+    &:focus {
+      color: #81b3d2;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #000000;
+    background-color: transparent;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .site-list__item a {
-    color: #000000;
+.site-list__item--active a {
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    color: #766357;
+
+    &:hover,
+    &:focus {
+      color: #766357;
+      background-color: transparent;
+    }
   }
 }

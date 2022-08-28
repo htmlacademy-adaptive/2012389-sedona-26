@@ -1,8 +1,14 @@
 .index-intro__wrapper {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: #81b3d2;
   margin: 0 auto;
-  width: 100%;
+
+  width: 320px;
+  height: 389px;
+  background-image: url("../img/intro-mobile.jpg");
 
   @media (min-width: $tablet-width) {
     width: 100%;

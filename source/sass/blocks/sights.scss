@@ -7,13 +7,14 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     max-width: 518px;
+    max-height: 189px;
     margin: 0 auto;
     margin-top: 48px;
-
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +44,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 20px 20px 0 20px;
 }
 
 .sights__wrap label {
@@ -51,5 +51,42 @@
   font-size: 18px;
   line-height: 26px;
 
-  margin-left: 16px;
+  position: relative;
+  padding: 20px 20px 20px 76px;
+}
+
+.sights__checkbox-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: #e5e5e5;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: #d5d5d5;
+    outline: none;
+  }
+}
+
+.sights__checkbox[type="checkbox"]:checked + .sights__checkbox-icon::before {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/form/check-arrow.svg");
+  content: "";
+
+  &:disabled {
+    background-color: rgba(51, 51, 51, 0.3);
+    outline: none;
+  }
 }

@@ -38,12 +38,25 @@
   text-transform: uppercase;
   color: #ffffff;
 
-  background: #81b3d2;
+  background-color: #81b3d2;
   border: none;
 
   padding: 19px 34px 14px 34px;
   margin-left: 20px;
 
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 48px;
