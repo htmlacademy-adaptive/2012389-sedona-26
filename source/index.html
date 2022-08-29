@@ -50,8 +50,11 @@
     <section class="index-intro">
       <h2 class="visually-hidden">О Седоне</h2>
       <div class="index-intro__wrapper">
-        <img class="index-intro__text-image" src="img/intro-text-type-phone.svg" width="282" height="214"
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/intro-text-tablet.svg" width="461" height="350">
+          <img class="index-intro__text-image" src="img/intro-text-phone.svg" width="282" height="214"
           alt="Welcome to the gourgeous Sedona because the Grand Canyon sucks!">
+        </picture>
       </div>
     </section>
     <section class="advantages">
@@ -69,9 +72,10 @@
                 <p class="advantages__number">— №1 —</p>
                 <p class="advantages__description">Седона — не аттракцион для туристов,там течёт своя жизнь</p>
               </div>
-
-                <img class="advantages__city-photo" src="img/city-photo-phone.jpg" width="320" height="260" alt="Дома в Седоне">
-
+              <picture>
+                <source media="(min-width: 768px)"  srcset="img/index/city-photo-tablet@2x.jpg 2x, img/index/city-photo-tablet.jpg 1x">
+                <img class="advantages__city-photo" src="img/index/city-photo-phone.jpg" width="320" height="260" srcset="img/index/city-photo-phone@2x.jpg 2x" alt="Дома в Седоне">
+              </picture>
             </div>
 
             <ul class="recommend advantages__sublist">
@@ -96,7 +100,7 @@
                 <p class="advantages__number">— №2 —</p>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-            <img class="advantages__bridge-photo" src="img/bridge-photo-phone.jpg" width="320" height="260"
+            <img class="advantages__bridge-photo" src="img/index/bridge-photo-phone.jpg" width="320" height="260"
               alt="Мост дьявола">
             </div>
           </li>

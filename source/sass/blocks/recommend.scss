@@ -98,18 +98,18 @@
 }
 
 .recommend__title--house::before {
-  background-image: url("../img/icon-house.svg");
+  background-image: url("../img/index/icon-house.svg");
   width: 39px;
   height: 37px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/icon-house.svg");
+    background-image: url("../img/index/icon-house.svg");
     width: 75px;
     height: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/icon-house.svg");
+    background-image: url("../img/index/icon-house.svg");
 
     width: 75px;
     height: 72px;
@@ -117,37 +117,37 @@
 }
 
 .recommend__title--food::before {
-  background-image: url("../img/icon-food.svg");
+  background-image: url("../img/index/icon-food.svg");
   width: 40px;
   height: 35px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/icon-food.svg");
+    background-image: url("../img/index/icon-food.svg");
     width: 75px;
     height: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/icon-food.svg");
+    background-image: url("../img/index/icon-food.svg");
     width: 75px;
     height: 72px;
   }
 }
 
 .recommend__title--gift::before {
-  background-image: url("../img/icon-gift.svg");
+  background-image: url("../img/index/icon-gift.svg");
   background-repeat: no-repeat;
   width: 32px;
   height: 38px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/index/icon-gift.svg");
     width: 75px;
     height: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/index/icon-gift.svg");
     width: 75px;
     height: 72px;
   }
