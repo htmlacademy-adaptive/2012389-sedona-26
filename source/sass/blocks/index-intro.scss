@@ -6,12 +6,12 @@
 
   width: 320px;
   height: 389px;
-  background-image: url("../img/intro-divider.svg"), url("../img/intro-mobile.jpg");
+  background-image: url("../img/intro-divider-mobile.svg"), url("../img/intro-mobile.jpg");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro-divider.svg"), url("../img/intro-mobile@2x.jpg");
+    background-image: url("../img/intro-divider-mobile.svg"), url("../img/intro-mobile@2x.jpg");
     object-fit: cover;
     background-size: 320px auto;
   }
