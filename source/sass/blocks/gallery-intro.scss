@@ -69,7 +69,12 @@
 }
 
 .gallery-intro__text-wrapper {
-  padding-top: 66px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 37px 20px 25px 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 62px;
@@ -79,9 +84,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
+    padding-top: 102px;
     padding-left: 370px;
-    padding-right: 370px;
+    padding-right: 372px;
     padding-bottom: 65px;
   }
 }
@@ -92,9 +97,16 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 26px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .gallery-intro__description {
@@ -103,6 +115,6 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  padding-left: 20px;
-  padding-right: 20px;
+
+  margin: 0;
 }

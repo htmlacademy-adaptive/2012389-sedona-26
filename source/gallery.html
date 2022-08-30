@@ -64,8 +64,12 @@
       <ul class="photo-gallery__list">
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="img/gallery/scope-photo-mobile.jpg" width="280" height="280"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/gallery/scope-photo-desktop.jpg 1x, img/gallery/scope-photo-desktop@2x.jpg 2x" width="1200" height="400" >
+              <source media="(min-width: 768px)" srcset="img/gallery/scope-photo-tablet.jpg 1x, img/gallery/scope-photo-tablet@2x.jpg 2x" width="648" height="400" >
+              <img class="photo-gallery__image" src="img/gallery/scope-photo-mobile.jpg" width="280" height="280" srcset="img/gallery/scope-photo-mobile@2x.jpg"
               alt="Трасса, горы, закат">
+            </picture>
           </a>
           <div class="photo-gallery__content photo-gallery__content--first">
             <p class="photo-gallery__image-title">Неродные просторы</p>
@@ -75,8 +79,13 @@
         </li>
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="img/gallery/flora-photo-mobile.jpg" width="280" height="280"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/gallery/flora-photo-desktop.jpg 1x, img/gallery/flora-photo-desktop@2x.jpg 2x" width="400" height="267" >
+              <source media="(min-width: 768px)" srcset="img/gallery/flora-photo-tablet.jpg 1x, img/gallery/flora-photo-tablet@2x.jpg 2x" width="324" height="267" >
+              <img class="photo-gallery__image" src="img/gallery/flora-photo-mobile.jpg" width="280" height="280" srcset="img/gallery/flora-photo-mobile@2x.jpg"
               alt="Кактус на фоне гор">
+            </picture>
+
           </a>
           <div class="photo-gallery__content">
             <p class="photo-gallery__image-title">Местная растительность</p>
@@ -86,8 +95,12 @@
         </li>
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="img/gallery/mountine-photo-mobile.jpg" width="280" height="280"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/gallery/road-photo-desktop.jpg 1x, img/gallery/road-photo-desktop@2x.jpg 2x" width="400" height="267" >
+              <source media="(min-width: 768px)" srcset="img/gallery/road-photo-tablet.jpg 1x, img/gallery/road-photo-tablet@2x.jpg 2x" width="324" height="267" >
+              <img class="photo-gallery__image" src="img/gallery/road-photo-mobile.jpg" width="280" height="280" srcset="img/gallery/road-photo-mobile@2x.jpg"
               alt="Дорога в горах">
+            </picture>
           </a>
           <div class="photo-gallery__content">
             <p class="photo-gallery__image-title">Дорога на север</p>
@@ -97,8 +110,12 @@
         </li>
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="img/gallery/bridge-photo-mobile.jpg" width="280" height="280"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/gallery/bridge-photo-desktop.jpg 1x, img/gallery/bridge-photo-desktop@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/gallery/bridge-photo-tablet.jpg 1x, img/gallery/bridge-photo-tablet@2x.jpg 2x" width="324" height="267" >
+              <img class="photo-gallery__image" src="img/gallery/bridge-photo-mobile.jpg" width="280" height="280" srcset="img/gallery/bridge-photo-mobile@2x.jpg"
               alt="Мост из скалы">
+            </picture>
           </a>
           <div class="photo-gallery__content">
             <p class="photo-gallery__image-title">Мост дьявола</p>
@@ -110,11 +127,17 @@
     </section>
     <section class="video-gallery">
       <h2 class="visually-hidden">Видео</h2>
-      <p class="video-gallery__title">Все еще сомневаетесь?</p>
-      <p class="video-gallery__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-        очередной раз!</p>
+      <div class="video-gallery__text-wrap">
+        <p class="video-gallery__title">Все еще сомневаетесь?</p>
+        <p class="video-gallery__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+           очередной раз!</p>
+      </div>
         <div class="video-gallery__content">
-          <img class="video-gallery__video" src="img/gallery/video-mobile.jpg" width="280" height="177" alt="Видео">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/gallery/video-desktop.jpg 1x, img/gallery/video-desktop@2x.jpg 2x" width="800" height="500">
+            <source media="(min-width: 768px)" srcset="img/gallery/video-tablet.jpg 1x, img/gallery/video-tablet@2x.jpg 2x" width="648" height="500" >
+            <img class="video-gallery__video" src="img/gallery/video-mobile.jpg" width="280" height="177" srcset="img/gallery/video-mobile@2x.jpg" alt="Видео">
+          </picture>
           <button class="video-gallery__button" type="button"></button>
         </div>
     </section>
