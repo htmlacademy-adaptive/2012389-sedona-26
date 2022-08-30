@@ -25,10 +25,6 @@
   align-items: center;
   justify-content: center;
 
-  background-image: url("../img/intro-divider-mobile.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-
   @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
@@ -146,10 +142,22 @@
   }
 }
 
+// .advantages-header::before {
+//   background-image: url("../img/white-arrow.svg");
+//   background-position: bottom;
+//   background-repeat: no-repeat;
+// }
+
+.advantages__list .advantages__item--accent-first {
+  background-image: url("../img/white-arrow.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 320px auto;
+}
+
 .advantages__content {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -157,6 +165,8 @@
 
     width: 758px;
     max-height: 256px;
+
+    // order: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -225,7 +235,7 @@
   margin: 0;
 }
 
-// .advantages__item .advantages__bridge-photo {
+// .advantages__bridge-photo {
 //   @media (min-width: $tablet-width) {
 //     order: -1;
 //   }
