@@ -76,12 +76,7 @@
   content: "";
   background-color: transparent;
   border: none;
-  background-image: url("../img/gallery/play-button.png");
+  background-image: url("../img/gallery/play-button.svg");
   width: 48px;
   height: 54px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/gallery/play-button@2x.png");
-    background-size: 48px auto;
-  }
 }
