@@ -61,6 +61,8 @@
   color: #000000;
 
   margin: 0;
+
+  padding-bottom: 0;
 }
 
 .advantages__list {
@@ -109,10 +111,7 @@
   background-color: #81b3d2;
   color: #ffffff;
 
-  padding-top: 54px;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
 
 .advantages__item.advantages__item--accent {
@@ -120,11 +119,13 @@
   flex-direction: column;
   justify-content: center;
 
+
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-end;
     width: 100%;
   }
 
@@ -137,37 +138,64 @@
   }
 }
 
+
+.advantages__list .advantages__item--accent-first {
+  background-image: url("../img/index/white-arrow.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 320px auto;
+  padding-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    padding-top: 0;
+  }
+}
+
 .advantages__content {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     padding: 0;
     flex-direction: row;
 
-    flex-basis: 758px;
+    width: 768px;
+    max-height: 256px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
     padding: 0;
     flex-direction: row;
 
-    flex-basis: 1200px;
+    width: 1200px;
   }
 }
 
 .advantages__text {
+  padding: 33px 22px 40px 16px;
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
-    max-width: 256px;
-    padding: 40px 32px 0 32px;
+    width: 256px;
+    max-height: 256px;
+    padding: 43px 36px 41px 36px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 400px;
-    padding: 47px 52px 0 53px;
+    width: 400px;
+    max-height: 256px;
+    padding: 51px 78px 53px 79px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -181,6 +209,7 @@
   margin: 0;
   padding-bottom: 20px;
 }
+
 
 .advantages__number {
   font-weight: 400;
@@ -201,17 +230,18 @@
   text-transform: uppercase;
 
   margin: 0;
-  padding-bottom: 20px;
 }
 
-.advantages__item--accent .advantages__description {
-  padding-bottom: 40px;
-
+.advantages__text.advantages__text--bridge {
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    order: 1;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 0;
-  }
+.advantages__city-photo {
+  display: block;
+}
+
+.advantages__bridge-photo {
+  display: block;
 }

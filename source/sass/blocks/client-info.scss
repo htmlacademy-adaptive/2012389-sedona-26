@@ -6,6 +6,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 120px;
+  }
 }
 
 .client-info__title {
@@ -47,6 +55,8 @@
   border: none;
 
   padding: 16px;
+  width: 280px;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
@@ -57,5 +67,9 @@
   &:active {
     background-color: #ffffff;
     outline: 4px solid #e5e5e5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
   }
 }

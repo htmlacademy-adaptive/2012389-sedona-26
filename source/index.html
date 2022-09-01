@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -45,8 +50,11 @@
     <section class="index-intro">
       <h2 class="visually-hidden">О Седоне</h2>
       <div class="index-intro__wrapper">
-        <img class="index-intro__text-image" src="img/intro-text-type-phone.svg" width="282" height="214"
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/intro-text-tablet.svg" width="461" height="350">
+          <img class="index-intro__text-image" src="img/intro-text-phone.svg" width="282" height="214"
           alt="Welcome to the gourgeous Sedona because the Grand Canyon sucks!">
+        </picture>
       </div>
     </section>
     <section class="advantages">
@@ -56,7 +64,7 @@
           <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </header>
         <ol class="advantages__list">
-          <li class="advantages__item advantages__item--accent">
+          <li class="advantages__item advantages__item--accent advantages__item--accent-first">
             <div class="advantages__content">
 
               <div class="advantages__text">
@@ -65,7 +73,11 @@
                 <p class="advantages__description">Седона — не аттракцион для туристов,там течёт своя жизнь</p>
               </div>
 
-                <img class="advantages__city-photo" src="img/city-photo-phone.jpg" width="320" height="260" alt="Дома в Седоне">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/index/city-photo-desktop.jpg 1x, img/index/city-photo-desktop@2x.jpg 2x" width="800" height="256" >
+                <source media="(min-width: 768px)" srcset="img/index/city-photo-tablet.jpg 1x, img/index/city-photo-tablet@2x.jpg 2x" width="512" height="256" >
+                <img class="advantages__city-photo" src="img/index/city-photo-phone.jpg" width="320" height="260" srcset="img/index/city-photo-phone@2x.jpg" alt="Дома в Седоне">
+              </picture>
 
             </div>
 
@@ -86,13 +98,17 @@
           </li>
           <li class="advantages__item advantages__item--accent">
             <div class="advantages__content">
-              <div class="advantages__text">
+              <div class="advantages__text advantages__text--bridge">
                 <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
                 <p class="advantages__number">— №2 —</p>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-            <img class="advantages__bridge-photo" src="img/bridge-photo-phone.jpg" width="320" height="260"
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/index/bridge-photo-desktop.jpg 1x, img/index/bridge-photo-desktop@2x.jpg 2x" width="800" height="256" >
+                <source media="(min-width: 768px)" srcset="img/index/bridge-photo-tablet.jpg 1x, img/index/bridge-photo-tablet@2x.jpg 2x" width="512" height="256" >
+                <img class="advantages__bridge-photo" src="img/index/bridge-photo-phone.jpg" width="320" height="260" srcset="img/index/bridge-photo-phone@2x.jpg"
               alt="Мост дьявола">
+            </picture>
             </div>
           </li>
           <li class="advantages__item">
@@ -172,5 +188,5 @@
 </div>
 </body>
 
-<script src="js/script.js"></script>
+<script src="js/script.js"> </script>
 </html>

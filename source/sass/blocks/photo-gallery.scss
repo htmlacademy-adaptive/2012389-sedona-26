@@ -109,8 +109,10 @@
 
     position: absolute;
     content: "";
-    top: 187px;
+    bottom: 0;
+
     width: 90%;
+    height: 80px;
     padding: 22px 20px 15px 20px;
     box-sizing: border-box;
   }
@@ -128,7 +130,6 @@
 
     position: absolute;
     content: "";
-    top: 187px;
     width: 90%;
     padding: 22px 20px 15px 20px;
     box-sizing: border-box;
@@ -137,7 +138,6 @@
 
 .photo-gallery__image-title {
   margin: 0;
-  padding-bottom: 11px;
 
   font-weight: 700;
   font-size: 14px;
@@ -147,7 +147,7 @@
 
 .photo-gallery__image-author {
   margin: 0;
-  padding-bottom: 14px;
+  padding-bottom: 11px;
 
   font-weight: 400;
   font-size: 14px;
@@ -199,4 +199,8 @@
     background-image: url("../img/gallery/like-icon-white.svg");
     background-repeat: no-repeat;
   }
+}
+
+.photo-gallery__image {
+  display: block;
 }
