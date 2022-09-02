@@ -4,6 +4,21 @@
   padding: 0;
   border: none;
 
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    height: 1px;
+    width: 320px;
+    background-color: #e5e5e5;
+  }
+
   @media (min-width: $tablet-width) {
     width: 648px;
     margin: 48px 60px 42px 60px;
@@ -11,6 +26,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +50,48 @@
   text-transform: uppercase;
 
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 308px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      top: 12px;
+      left: 0;
+
+      background-color: #e5e5e5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      top: 12px;
+      right: 0;
+
+      background-color: #e5e5e5;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 280px;
+      height: 1px;
+      top: 12px;
+      left: 0;
+    }
+
+    &::after {
+      width: 280px;
+      height: 1px;
+      top: 12px;
+      right: 0;
+    }
+  }
 }
 
 .sights__wrap {

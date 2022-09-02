@@ -2,4 +2,24 @@
   background-color: #ffffff;
 
   margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 1px;
+    width: 320px;
+    background-color: #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
 }
