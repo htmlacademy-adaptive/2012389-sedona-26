@@ -1,22 +1,21 @@
 .travel {
   color: #000000;
-
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+
   padding: 38px 30px 32px 29px;
-  margin: 0 auto;
-  max-width: 320px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
-    max-width: 768px;
-    margin: 0 auto;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 1200px;
+    padding: 61px 371px 66px 371px;
   }
 }
 
@@ -30,7 +29,12 @@
 
   margin: 0;
   padding-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+  }
 }
+
 
 .travel__description {
   font-weight: 400;
@@ -41,6 +45,10 @@
 
   margin: 0;
   padding-bottom: 26px;
+
+  // @media (min-width: $desktop-width) {
+  //   width: 435px;
+  // }
 }
 
 .travel__link {
