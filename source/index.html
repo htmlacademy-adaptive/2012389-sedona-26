@@ -74,6 +74,10 @@
               </div>
 
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/city-photo-desktop.webp 1x, img/index/city-photo-desktop@2x.webp 2x" width="800" height="256" >
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/index/city-photo-tablet.webp 1x, img/index/city-photo-tablet@2x.webp 2x" width="512" height="256" >
+                <source type="image/webp" srcset="img/photo-1-phone.webp 1x, img/index/city-photo-desktop@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/index/city-photo-desktop.jpg 1x, img/index/city-photo-desktop@2x.jpg 2x" width="800" height="256" >
                 <source media="(min-width: 768px)" srcset="img/index/city-photo-tablet.jpg 1x, img/index/city-photo-tablet@2x.jpg 2x" width="512" height="256" >
                 <img class="advantages__city-photo" src="img/index/city-photo-phone.jpg" width="320" height="260" srcset="img/index/city-photo-phone@2x.jpg" alt="Дома в Седоне">
@@ -104,6 +108,10 @@
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/index/bridge-photo-desktop.webp 1x, img/index/bridge-photo-desktop@2x.webp 2x" width="800" height="256" >
+                <source media="(min-width: 768px)" srcset="img/index/bridge-photo-tablet.webp 1x, img/index/bridge-photo-tablet@2x.webp 2x" width="512" height="256" >
+                <source type="image/webp" srcset="img/index/bridge-photo-phone.webp 1x, img/webpindex/bridge-photo-phone@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/index/bridge-photo-desktop.jpg 1x, img/index/bridge-photo-desktop@2x.jpg 2x" width="800" height="256" >
                 <source media="(min-width: 768px)" srcset="img/index/bridge-photo-tablet.jpg 1x, img/index/bridge-photo-tablet@2x.jpg 2x" width="512" height="256" >
                 <img class="advantages__bridge-photo" src="img/index/bridge-photo-phone.jpg" width="320" height="260" srcset="img/index/bridge-photo-phone@2x.jpg"
@@ -151,14 +159,14 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="https://vk.com/htmlacademy">
-            <svg class="social__vkontakte-icon"  width="24" height="14">
+            <svg class="social__vkontakte-icon"  width="24" height="14" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
             <span class="visually-hidden">Изображение логотипа Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy">
+          <a class="social__link" href="https://t.me/htmlacademy" aria-hidden="true" focusable="false">
             <svg  class="social__telegram-icon" aria-hidden="true" focusable="false" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#icon-telegram"></use>
             </svg>
@@ -167,7 +175,7 @@
         </li>
         <li class="social__item">
           <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-          <svg class="social__youtube-icon" aria-hidden="true" focusable="false" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="social__youtube-icon" aria-hidden="true" focusable="false" width="20" height="14">
             <use xlink:href="img/sprite.svg#icon-youtube"></use>
           </svg>
           <span class="visually-hidden">Изображение логотипа Youtube</span>
@@ -178,7 +186,7 @@
     <div class="main-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="35">
           <use xlink:href="img/sprite.svg#icon-academy"></use>
         </svg>
           <span class="visually-hidden">Изображение логотипа HTML-Academy</span>
