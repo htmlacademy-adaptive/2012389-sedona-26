@@ -1,3 +1,15 @@
+.social {
+  @media (min-width: $tablet-width) {
+    margin-left: 97px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 254px;
+  }
+}
+
 .social__list {
   list-style: none;
 
@@ -8,8 +20,12 @@
 
   margin: 0;
   padding-left: 0;
-  padding-top: 33px;
+  padding-top: 34px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .social__item {

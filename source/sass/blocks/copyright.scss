@@ -3,6 +3,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 256px;
+  }
 }
 
 .copyright__text {
@@ -22,6 +30,10 @@
 
   &:active {
     color: #b3b3b3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 121px;
   }
 }
 

@@ -15,6 +15,7 @@
 .map .map__sedona {
   border: none;
   margin: 0 auto;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
