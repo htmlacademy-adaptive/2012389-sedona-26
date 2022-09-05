@@ -21,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     width: 648px;
-    margin: 30px 60px 0 60px;
+    margin: 48px 60px 0 60px;
     box-sizing: border-box;
 
     display: flex;
@@ -34,8 +34,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
-    margin: 60px 120px 0 120px;
+    width: 1200px;
+    padding: 45px 120px 0 120px;
+    margin: 0;
+    margin-top: 56px;
     box-sizing: border-box;
 
     display: flex;
@@ -53,6 +55,9 @@
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 28px;
+
     &::before {
       content: "";
       position: absolute;
@@ -77,18 +82,22 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin: 0;
+
+
     &::before {
       width: 280px;
       height: 1px;
       top: 12px;
-      left: 0;
+      left: 120px;
     }
 
     &::after {
       width: 280px;
       height: 1px;
       top: 12px;
-      right: 0;
+      right: 120px;
     }
   }
 }
@@ -98,6 +107,15 @@
   flex-direction: row;
   align-items: center;
   padding-right: 8px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    margin-left: 30px;
+
+    width: 280px;
+    height: 46px;
+  }
 }
 
 .impression__wrap label {
@@ -107,6 +125,7 @@
 
   position: relative;
   padding: 20px 8px 20px 86px;
+  box-sizing: border-box;
 }
 
 .impression__radio-mark {

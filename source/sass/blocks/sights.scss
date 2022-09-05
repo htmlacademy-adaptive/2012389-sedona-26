@@ -21,7 +21,8 @@
 
   @media (min-width: $tablet-width) {
     width: 648px;
-    margin: 48px 60px 42px 60px;
+    margin-top: 48px;
+    padding: 0 60px 0 60px;
 
     display: flex;
     flex-direction: row;
@@ -34,7 +35,9 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
-    margin: 56px 120px 56px 120px;
+    padding: 0 120px 0 120px;
+    margin-top: 73px;
+    margin-bottom: 0;
 
     display: flex;
     flex-direction: row;
@@ -52,6 +55,7 @@
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
     width: 308px;
 
     &::before {
@@ -78,18 +82,21 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin-bottom: 45px;
+
     &::before {
       width: 280px;
       height: 1px;
-      top: 12px;
-      left: 0;
+      top: 26px;
+      left: 120px;
     }
 
     &::after {
       width: 280px;
       height: 1px;
-      top: 12px;
-      right: 0;
+      top: 26px;
+      right: 120px;
     }
   }
 }
@@ -117,6 +124,11 @@
   line-height: 26px;
   position: relative;
   padding: 20px 20px 20px 76px;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
+  }
 }
 
 .sights__checkbox-icon {

@@ -23,6 +23,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 60px;
+    align-items: flex-start;
 
     &::before {
       width: 1px;
@@ -51,6 +52,17 @@
 
   margin: 0;
   padding: 24px 75px 20px 75px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    padding: 0 0 28px 167px;
+    text-align: left;
+  }
 }
 
 .client-info__name {

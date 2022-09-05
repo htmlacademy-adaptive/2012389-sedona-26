@@ -18,6 +18,7 @@
   @media (min-width: $desktop-width) {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 80px;
 
     display: flex;
     flex-direction: row;
@@ -38,6 +39,9 @@
 
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 28px;
+
     &::before {
       content: "";
       position: absolute;
@@ -65,14 +69,14 @@
       width: 280px;
       height: 1px;
       top: 12px;
-      left: 0;
+      left: -120px;
     }
 
     &::after {
       width: 280px;
       height: 1px;
       top: 12px;
-      right: 0;
+      right: -120px;
     }
   }
 }
