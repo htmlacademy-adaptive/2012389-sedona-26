@@ -1,7 +1,7 @@
 .contact {
   margin: 0;
-  margin-bottom: 34px;
   padding: 0;
+  padding-bottom: 18px;
   border: none;
 
   display: flex;
@@ -15,7 +15,7 @@
     margin: 0 auto;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -8px;
 
     height: 1px;
     width: 320px;
@@ -24,6 +24,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    padding-bottom: 0;
     padding-left: 20px;
 
     &::before {

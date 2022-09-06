@@ -12,7 +12,7 @@
     margin: 0 auto;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -20px;
 
     height: 1px;
     width: 320px;
@@ -21,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     width: 648px;
-    margin-top: 48px;
+    margin-top: 28px;
     padding: 0 60px 0 60px;
 
     display: flex;
@@ -83,7 +83,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
 
     &::before {
       width: 280px;
@@ -108,8 +108,8 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    margin-left: 50px;
-    width: 254px;
+    margin-left: 65px;
+    width: 224px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,7 +127,7 @@
   box-sizing: border-box;
 
   @media (min-width: $desktop-width) {
-    margin-left: 20px;
+    margin-left: 22px;
   }
 }
 

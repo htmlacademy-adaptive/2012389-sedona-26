@@ -12,7 +12,7 @@
     margin: 0 auto;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -12px;
 
     height: 1px;
     width: 320px;
@@ -52,11 +52,14 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
   margin-bottom: 10px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin-bottom: 28px;
+    padding-top: 0;
 
     &::before {
       content: "";
@@ -111,7 +114,16 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    width: 280px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-left: 30px;
+    margin-bottom: 0;
 
     width: 280px;
     height: 46px;

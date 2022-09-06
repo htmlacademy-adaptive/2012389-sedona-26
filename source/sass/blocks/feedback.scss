@@ -2,12 +2,13 @@
   padding: 0;
   border: none;
   margin: 0 auto;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
     margin: 0 auto;
+    margin-bottom: 34px;
 
     display: flex;
     flex-direction: row;
@@ -34,7 +35,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  margin-top: 24px;
+  padding-top: 24px;
   margin-bottom: 20px;
 
 
