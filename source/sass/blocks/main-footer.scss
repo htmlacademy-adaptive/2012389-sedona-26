@@ -9,7 +9,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   width: 320px;
-  padding: 39px 80px 23px 84px;
+  padding: 39px 78px 23px 76px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -23,5 +23,35 @@
   @media (min-width: $desktop-width) {
     width: 1200px;
     height: 120px;
+  }
+}
+
+.main-footer__hashtag {
+  padding-left: 76px;
+  padding-right: 78px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-footer__social {
+  padding-left: 84px;
+  padding-right: 80px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-footer__copyright {
+  box-sizing: border-box;
+  width: 144px;
+  height: 34px;
+  padding-left: 2px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }

@@ -30,7 +30,6 @@
   background-image: url("../img/intro-divider-mobile.svg"), url("../img/gallery/gallery-intro-mobile.jpg");
   background-position: bottom, left top;
   background-repeat: no-repeat, no-repeat;
-  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-divider-mobile.svg"), url("../img/gallery/gallery-intro-mobile@2x.jpg");
@@ -43,10 +42,10 @@
 
     width: 768px;
     height: 290px;
-    background-image: url("../img/intro-divider.svg"), url("../img/gallery/gallery-intro-tablet.jpg");
+    background-image: url("../img/intro-divider-tablet.svg"), url("../img/gallery/gallery-intro-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro-divider.svg"), url("../img/gallery/gallery-intro-tablet@2x.jpg");
+      background-image: url("../img/intro-divider-tablet.svg"), url("../img/gallery/gallery-intro-tablet@2x.jpg");
       background-size: 768px auto;
     }
   }
