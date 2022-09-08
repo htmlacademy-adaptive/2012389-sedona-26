@@ -75,7 +75,7 @@
 
 .photo-gallery__link {
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 
   ::before {
     content: "";
@@ -184,7 +184,8 @@
 }
 
 .photo-gallery__button-thumbs-up {
-  padding-left: 34px;
+  padding-left: 35px;
+  padding-top: 5px;
 
   background-color: #ffffff;
   color: #000000;
@@ -214,9 +215,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 33px;
     position: absolute;
     content: "";
-    right: 50px;
+    bottom: 25px;
 
     background-color: transparent;
     color: #ffffff;

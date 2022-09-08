@@ -9,7 +9,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   width: 320px;
-  padding: 39px 78px 23px 76px;
+  padding: 29px 78px 23px 76px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -48,8 +48,7 @@
   box-sizing: border-box;
   width: 144px;
   height: 34px;
-  padding-left: 2px;
-  padding-right: 20px;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
