@@ -1,6 +1,6 @@
 .impression {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 39px;
   padding: 0;
   border: none;
 
@@ -21,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     width: 648px;
-    margin: 48px 60px 0 60px;
+    margin: 25px 60px 0 60px;
     box-sizing: border-box;
 
     display: flex;
@@ -37,7 +37,7 @@
     width: 1200px;
     padding: 45px 120px 0 120px;
     margin: 0;
-    margin-top: 56px;
+    margin-top: 35px;
     box-sizing: border-box;
 
     display: flex;
@@ -69,7 +69,7 @@
       top: 12px;
       left: 0;
 
-      background-color: #e5e5e5;
+      background-color: #d8d8d8;
     }
 
     &::after {
@@ -80,7 +80,7 @@
       top: 12px;
       right: 0;
 
-      background-color: #e5e5e5;
+      background-color: #d8d8d8;
     }
   }
 
@@ -114,16 +114,17 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 0;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 17px;
+    margin-bottom: 17px;
 
     width: 280px;
     height: 46px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 0;
     margin-left: 30px;
-    margin-bottom: 0;
+    margin-right: 5px;
 
     width: 280px;
     height: 46px;
@@ -136,8 +137,16 @@
   line-height: 26px;
 
   position: relative;
-  padding: 20px 8px 20px 86px;
+  padding: 23px 8px 15px 83px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 8px 15px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 8px 15px 80px;
+  }
 }
 
 .impression__radio-mark {

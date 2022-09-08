@@ -28,6 +28,7 @@
     align-items: flex-start;
 
     &::before {
+      background-color: #d8d8d8;
       width: 1px;
       height: 338px;
       left: 323px;
@@ -58,11 +59,12 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     padding-bottom: 28px;
+    padding-left: 80px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
-    padding: 0 0 28px 167px;
+    padding: 5px 0 25px 167px;
     text-align: left;
   }
 }
