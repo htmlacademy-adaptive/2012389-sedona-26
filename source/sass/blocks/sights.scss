@@ -116,8 +116,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 25px;
+    margin-right: 0;
     width: 210px;
   }
 }
@@ -131,7 +131,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    margin-left: 22px;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {

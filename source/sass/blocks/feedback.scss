@@ -47,10 +47,10 @@
       position: absolute;
       width: 123px;
       height: 1px;
-      top: 12px;
+      top: 24px;
       left: 0;
 
-      background-color: #e5e5e5;
+      background-color: #d8d8d8;
     }
 
     &::after {
@@ -58,9 +58,9 @@
       position: absolute;
       width: 123px;
       height: 1px;
-      top: 12px;
+      top: 24px;
       right: 0;
-      background-color: #e5e5e5;
+      background-color: #d8d8d8;
     }
   }
 
@@ -68,14 +68,14 @@
     &::before {
       width: 280px;
       height: 1px;
-      top: 12px;
+      top: 24px;
       left: -120px;
     }
 
     &::after {
       width: 280px;
       height: 1px;
-      top: 12px;
+      top: 24px;
       right: -120px;
     }
   }
