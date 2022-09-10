@@ -1,22 +1,22 @@
 .travel {
   color: #000000;
-
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding: 38px 30px 32px 29px;
-  margin: 0 auto;
-  max-width: 320px;
+
+  padding: 40px 30px 49px 29px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
-    max-width: 768px;
-    margin: 0 auto;
+    width: 768px;
+    padding: 61px 166px 58px 167px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 1200px;
+    padding: 58px 371px 66px 371px;
   }
 }
 
@@ -29,7 +29,28 @@
   text-transform: uppercase;
 
   margin: 0;
-  padding-bottom: 26px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 30px;
+  }
+}
+
+.travel__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
 
 .travel__description {
@@ -40,7 +61,11 @@
   text-transform: uppercase;
 
   margin: 0;
-  padding-bottom: 26px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 46px;
+  }
 }
 
 .travel__link {
@@ -58,7 +83,9 @@
   background-color: #81b3d2;
 
   display: inline-block;
+  width: 284px;
   padding: 16px 49px;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
@@ -76,5 +103,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 15px 121px 18px;
+    width: 458px;
   }
 }

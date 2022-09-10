@@ -14,9 +14,9 @@
 }
 
 .advantages__header {
-  padding: 32px 20px 16px 18px;
+  padding: 32px 20px 10px 18px;
   margin: 0 auto;
-  width: 320px;
+  width: 300px;
 
   box-sizing: border-box;
 
@@ -28,11 +28,13 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
+    padding: 48px 124px 48px 124px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
     margin: 0 auto;
+    padding: 59px 359px 38px 357px;
   }
 }
 
@@ -47,7 +49,19 @@
   color: #000000;
 
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    width: 520px;
+
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    width: 484px;
+  }
 }
 
 .advantages__intro {
@@ -62,7 +76,12 @@
 
   margin: 0;
 
-  padding-bottom: 0;
+  padding-bottom: 8px;
+
+  @media (min-width: $desktop-width) {
+    width: 484px;
+    white-space: nowrap;
+  }
 }
 
 .advantages__list {
@@ -96,7 +115,7 @@
 
   box-sizing: border-box;
   margin: 0;
-  padding: 26px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 256px;
@@ -144,7 +163,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: 320px auto;
-  padding-top: 35px;
+  padding-top: 38px;
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -172,32 +191,90 @@
   }
 }
 
-.advantages__text {
-  padding: 33px 22px 40px 16px;
+
+.advantages__item--accent .advantages__text {
+  padding: 33px 22px 35px 16px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 256px;
     max-height: 256px;
-    padding: 43px 36px 41px 36px;
+    padding: 40px 32px 44px 32px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
     max-height: 256px;
-    padding: 51px 78px 53px 79px;
+    padding: 47px 52px 56px 53px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
+
+.advantages__text--regular .advantages__title {
+  padding-bottom: 12px;
+}
+
+.advantages__text--regular .advantages__number {
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
+}
+
+.advantages__text {
+  padding: 25px 26px 24px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 40px 42px 41px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 43px 43px 62px 42px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantages__text.advantages__text--regular {
+  &::after {
+    content: "";
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 1px;
+    width: 284px;
+    background-color: #d6d6d6;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
 
 .advantages__title {
   font-weight: 700;
@@ -207,9 +284,24 @@
   text-transform: uppercase;
 
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
+.advantages__title br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
 
 .advantages__number {
   font-weight: 400;
@@ -219,8 +311,13 @@
   text-transform: uppercase;
 
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 16px;
+  }
 }
+
 
 .advantages__description {
   font-weight: 400;
@@ -233,6 +330,8 @@
 }
 
 .advantages__text.advantages__text--bridge {
+  padding-top: 39px;
+
   @media (min-width: $tablet-width) {
     order: 1;
   }
@@ -240,6 +339,10 @@
 
 .advantages__city-photo {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .advantages__bridge-photo {

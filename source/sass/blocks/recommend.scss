@@ -22,7 +22,7 @@
 
 .recommend__item {
   position: relative;
-  padding: 23px 20px 22px 18px;
+  padding: 22px 20px 0 18px;
 
   @media (min-width: $tablet-width) {
     padding: 158px 36px 59px 36px;
@@ -33,6 +33,18 @@
   }
 }
 
+.recommend__item:nth-child(3) {
+  padding-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 79px;
+  }
+}
+
 .recommend__title {
   font-weight: 700;
   font-size: 18px;
@@ -40,16 +52,52 @@
   text-transform: uppercase;
 
   margin: 0;
-  padding-bottom: 16px;
-  padding-left: 47px;
+  padding: 10px 0 16px 47px;
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
     text-align: center;
-    padding-left: 0;
+    padding: 0;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    padding: 0;
+    padding-bottom: 26px;
+  }
+}
+
+.recommend__title.recommend__title--food {
+  padding-left: 53px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.recommend__description.recommend__description--food {
+  padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.recommend__title.recommend__title--gift {
+  padding-left: 45px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-bottom: 25px;
+  }
+}
+
+.recommend__description.recommend__description--gift {
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
     padding-left: 0;
   }
 }
@@ -78,7 +126,7 @@
 .recommend__title::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 24px;
   left: 18px;
   background-repeat: no-repeat;
 

@@ -2,10 +2,10 @@
   padding: 0;
   border: none;
   margin: 0 auto;
-  margin-bottom: 34px;
+  margin-bottom: 56px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
     max-width: 768px;
     margin: 0 auto;
 
@@ -16,9 +16,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 70px;
 
     display: flex;
     flex-direction: row;
@@ -34,8 +34,51 @@
   text-align: center;
   text-transform: uppercase;
 
-  margin-top: 24px;
+  padding-top: 10px;
   margin-bottom: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      top: 24px;
+      left: 0;
+
+      background-color: #d8d8d8;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      top: 24px;
+      right: 0;
+      background-color: #d8d8d8;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 280px;
+      height: 1px;
+      top: 24px;
+      left: -120px;
+    }
+
+    &::after {
+      width: 280px;
+      height: 1px;
+      top: 24px;
+      right: -120px;
+    }
+  }
 }
 
 .feedback__textarea {
@@ -52,7 +95,7 @@
   display: block;
   min-width: 292px;
   min-height: 150px;
-  padding: 16px;
+  padding: 16px 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {

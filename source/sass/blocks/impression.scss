@@ -1,22 +1,43 @@
 .impression {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 39px;
   padding: 0;
   border: none;
 
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+
+    height: 1px;
+    width: 320px;
+    background-color: #e5e5e5;
+  }
+
   @media (min-width: $tablet-width) {
     width: 648px;
-    margin: 30px 60px 0 60px;
+    margin: 25px 60px 0 60px;
     box-sizing: border-box;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
-    margin: 60px 120px 0 120px;
+    width: 1200px;
+    padding: 45px 120px 0 120px;
+    margin: 0;
+    margin-top: 35px;
     box-sizing: border-box;
 
     display: flex;
@@ -31,11 +52,57 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 10px;
 
-  // @media (min-width: $tablet-width) {
-  //   margin-bottom: 28px;
-  // }
+  margin-bottom: 10px;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 28px;
+    padding-top: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      top: 12px;
+      left: 0;
+
+      background-color: #d8d8d8;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      top: 12px;
+      right: 0;
+
+      background-color: #d8d8d8;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin: 0;
+
+
+    &::before {
+      width: 280px;
+      height: 1px;
+      top: 12px;
+      left: 120px;
+    }
+
+    &::after {
+      width: 280px;
+      height: 1px;
+      top: 12px;
+      right: 120px;
+    }
+  }
 }
 
 .impression__wrap {
@@ -43,6 +110,25 @@
   flex-direction: row;
   align-items: center;
   padding-right: 8px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    margin-left: 17px;
+    margin-bottom: 17px;
+
+    width: 280px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    margin-left: 30px;
+    margin-right: 5px;
+
+    width: 280px;
+    height: 46px;
+  }
 }
 
 .impression__wrap label {
@@ -51,7 +137,16 @@
   line-height: 26px;
 
   position: relative;
-  padding: 20px 8px 20px 86px;
+  padding: 23px 8px 15px 83px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 8px 15px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 8px 15px 80px;
+  }
 }
 
 .impression__radio-mark {

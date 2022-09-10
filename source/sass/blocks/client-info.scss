@@ -6,13 +6,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin-bottom: 23px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+
+    height: 1px;
+    width: 320px;
+    background-color: #e5e5e5;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 60px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+
+    &::before {
+      background-color: #d8d8d8;
+      width: 1px;
+      height: 338px;
+      left: 323px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 120px;
+
+    &::before {
+      width: 1px;
+      height: 338px;
+      left: 493px;
+    }
   }
 }
 
@@ -25,6 +55,18 @@
 
   margin: 0;
   padding: 24px 75px 20px 75px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-bottom: 28px;
+    padding-left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    padding: 5px 0 25px 167px;
+    text-align: left;
+  }
 }
 
 .client-info__name {

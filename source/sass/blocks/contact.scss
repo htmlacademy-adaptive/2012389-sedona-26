@@ -1,19 +1,39 @@
 .contact {
   margin: 0;
-  margin-bottom: 34px;
   padding: 0;
+  padding-bottom: 18px;
   border: none;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
-  // @media (min-width: $tablet-width) {
-  //   margin-left: 70px;
-  // }
+  &::before {
+    content: "";
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    height: 1px;
+    width: 320px;
+    background-color: #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+
+    &::before {
+      display: none;
+    }
+  }
 
   @media (min-width: $desktop-width) {
-    margin-left: 128px;
+    margin-left: 95px;
   }
 }
 
@@ -25,7 +45,18 @@
   text-align: center;
 
   margin: 0;
-  padding: 24px 41px 20px 41px;
+  padding: 25px 41px 20px 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-bottom: 28px;
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 0 25px 43px;
+    text-align: left;
+  }
 }
 
 .contact__phone {
@@ -40,6 +71,10 @@
 
   margin-bottom: 16px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+  }
 }
 
 .contact__phone label {
@@ -58,6 +93,10 @@
 
   margin-bottom: 16px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+  }
 }
 
 .contact__email label {
@@ -111,6 +150,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 430px;
+    width: 402px;
   }
 }

@@ -47,6 +47,8 @@
   flex-direction: column;
   align-items: flex-start;
 
+  position: relative;
+
   @media (min-width: $tablet-width) {
     position: relative;
     padding: 0;
@@ -55,7 +57,6 @@
 
   @media (min-width: $desktop-width) {
     min-width: 400px;
-
     position: relative;
   }
 }
@@ -74,14 +75,34 @@
 
 .photo-gallery__link {
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
+
+  ::before {
+    content: "";
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 320px;
+    background-color: #e5e5e5;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
+
+    ::before {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+
+    ::before {
+      display: none;
+    }
   }
 }
 
@@ -90,12 +111,16 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    min-width: 324px;
+    width: 324px;
     background: #f2f2f2;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    height: 80px;
+    padding: 22px 20px 15px 20px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,9 +137,7 @@
     bottom: 0;
 
     width: 90%;
-    height: 80px;
     padding: 22px 20px 15px 20px;
-    box-sizing: border-box;
   }
 }
 
@@ -161,7 +184,8 @@
 }
 
 .photo-gallery__button-thumbs-up {
-  padding-left: 34px;
+  padding-left: 35px;
+  padding-top: 5px;
 
   background-color: #ffffff;
   color: #000000;
@@ -186,12 +210,15 @@
 
     background-image: url("../img/gallery/like-icon.svg");
     background-repeat: no-repeat;
+
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 33px;
     position: absolute;
     content: "";
-    right: 50px;
+    bottom: 25px;
 
     background-color: transparent;
     color: #ffffff;
