@@ -13,7 +13,6 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 
-
 // Styles
 
 export const styles = () => {
@@ -123,7 +122,6 @@ const watcher = () => {
   gulp.watch('source/js/script.js', gulp.series(script));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
-
 
 //Build
 
