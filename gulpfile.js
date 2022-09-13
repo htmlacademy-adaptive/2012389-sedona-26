@@ -6,6 +6,9 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
+import terser from 'gulp-terser';
+
 
 // Styles
 
@@ -21,6 +24,28 @@ export const styles = () => {
     .pipe(gulp.dest('dist/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
+// HTML
+
+export const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest('dist/html'));
+}
+
+// Scripts
+
+export const script = () => {
+  return gulp.src('source/js/*.js')
+  .pipe(terser())
+  .pipe(gulp.dest('dist/js'));
+}
+
+//Images
+
+//WebP
+
+//SVG
 
 // Server
 
@@ -45,5 +70,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  styles, html, script, server, watcher
 );
