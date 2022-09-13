@@ -6,8 +6,7 @@
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "^10.4.9",
     "browser-sync": "2.27.7",
-    "del": "^7.0.0",
-    "dell": "^0.0.0",
+    "del": "^6.1.1",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
@@ -29,7 +28,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "npx gulp"
   },
   "browserslist": [
