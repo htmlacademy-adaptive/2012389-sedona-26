@@ -84,14 +84,6 @@ export const sprite = () => {
   .pipe(gulp.dest('build/img'));
 }
 
-export const spriteDefault = () => {
-  return gulp.src('source/img/icons/*.svg')
-  .pipe(svgstore( {
-    inlineSvg: true
-  } ))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('source/img'));
-}
 
 //Copy
 
@@ -169,7 +161,7 @@ export default gulp.series(
     html,
     script,
     svg,
-    spriteDefault,
+    sprite,
     createWebp
   ),
   gulp.series(
