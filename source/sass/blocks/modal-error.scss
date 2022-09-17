@@ -4,23 +4,34 @@
 
   margin: 0 auto;
 
-  // position: fixed;
-  // top: 100px;
-  // left: 100px;
-  // background-color: rgba(242, 242, 242, 0.8);
+  position: fixed;
+  left: 0;
+  top: 50%;
+
+  background: rgba(242, 242, 242, 0.8);
 
   @media (min-width: $tablet-width) {
     width: 400px;
     height: 347px;
     margin: 0 auto;
+
+    left: 184px;
+    top: 50%;
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
     min-height: 347px;
     margin: 0 auto;
+
+    left: 440px;
+    top: 50%;
   }
 }
+
+// .modal-error--close {
+//   display: none;
+// }
 
 .modal-error__container {
   padding: 45px 42px 35px 41px;
@@ -40,9 +51,6 @@
   }
 }
 
-// .modal-error__container--close {
-//   display: none;
-// }
 
 .modal-error__title br {
   display: none;
