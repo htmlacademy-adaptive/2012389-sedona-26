@@ -1,11 +1,10 @@
 .copyright {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    margin-left: 110px;
+    margin-left: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,7 +19,6 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-right: 15px;
   color: #000000;
 
   &:hover,
