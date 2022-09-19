@@ -98,6 +98,17 @@
   padding: 16px 20px;
   margin: 0 auto;
 
+  &:hover,
+  &:focus {
+    background-color: #e5e5e5;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 648px;
     min-height: 160px;
