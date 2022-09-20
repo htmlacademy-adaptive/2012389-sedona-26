@@ -21,6 +21,8 @@
   margin: 0;
   color: #000000;
 
+  padding-right: 10px;
+
   &:hover,
   &:focus {
     color: #81b3d2;
@@ -32,6 +34,8 @@
 
   @media (min-width: $tablet-width) {
     width: 121px;
+
+    padding-right: 0;
   }
 }
 
