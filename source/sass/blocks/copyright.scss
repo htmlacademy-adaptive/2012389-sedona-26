@@ -39,7 +39,20 @@
   }
 }
 
-.copyright__icon use {
+.copyright__link {
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.copyright__icon {
   fill: #000000;
 
   &:hover,

@@ -356,6 +356,7 @@
 
 .advantages__text--regular .advantages__description {
   width: 249px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 180px;
@@ -407,18 +408,6 @@
   }
 }
 
-.advantages__description br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: inline-block;
-  }
-}
-
 .advantages__title br {
   display: none;
   white-space: pre-wrap;
@@ -429,5 +418,11 @@
 
   @media (min-width: $desktop-width) {
     display: inline-block;
+  }
+}
+
+.advantages__item--accent-first .advantages__description {
+  @media (min-width: $desktop-width) {
+    width: 290px;
   }
 }
