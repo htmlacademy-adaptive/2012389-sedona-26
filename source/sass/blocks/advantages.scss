@@ -418,3 +418,16 @@
     display: inline-block;
   }
 }
+
+.advantages__title br {
+  display: none;
+  white-space: pre-wrap;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
