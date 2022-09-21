@@ -21,6 +21,8 @@
   margin: 0;
   color: #000000;
 
+  padding-right: 10px;
+
   &:hover,
   &:focus {
     color: #81b3d2;
@@ -32,18 +34,33 @@
 
   @media (min-width: $tablet-width) {
     width: 121px;
+
+    padding-right: 0;
   }
 }
 
 .copyright__link {
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.copyright__icon {
   fill: #000000;
 
-  &:hover path,
-  &:focus path {
+  &:hover,
+  &:focus {
     fill: #81b3d2;
   }
 
-  &:active path {
+  &:active {
     fill: #b3b3b3;
   }
 }
